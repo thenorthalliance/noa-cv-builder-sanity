@@ -1,9 +1,9 @@
-# Sanity Clean Content Studio
+# NoA CV Builder using Sanity Studio
 
-Congratulations, you have now installed the Sanity Content Studio, an open-source real-time content editing environment connected to the Sanity backend.
+MVP-repo for Sanity CMS to the OnePagerCV-webrepo. 
 
-Now you can do the following things:
+Run command in terminal to install project
+`pnpm install`
 
-- [Read “getting started” in the docs](https://www.sanity.io/docs/introduction/getting-started?utm_source=readme)
-- [Join the community Slack](https://slack.sanity.io/?utm_source=readme)
-- [Extend and build plugins](https://www.sanity.io/docs/content-studio/extending?utm_source=readme)
+To run project
+`pnpm dev`

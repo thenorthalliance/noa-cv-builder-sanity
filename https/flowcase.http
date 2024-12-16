@@ -1,3 +1,5 @@
+# Using extenstion RestClient to test api-calls https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+
 @company = noaignite
 @token = 57644d168d745199db06e220c91ccd8b
 @employee = "Ane"

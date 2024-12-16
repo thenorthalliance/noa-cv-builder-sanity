@@ -8,6 +8,7 @@ export const deskStructure: StructureResolver = (S) =>
     S.list()
         .title('NoA CV Builder')
         .items([
+            //// Section for pitch-templates. Not implemented yet.
             // S.listItem()
             //     .title('Templates')
             //     .schemaType('template')

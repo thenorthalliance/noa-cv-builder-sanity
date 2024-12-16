@@ -45,7 +45,7 @@ export default defineType({
       },
     }),
    
-
+    // Two fields for the same data. Been testing to see which one would work best.
     defineField({
       name: 'skills',
       title: 'Skills',
@@ -62,7 +62,7 @@ export default defineType({
       validation: rule => rule.required().max(10).error('You have too many skills. Max 10 skills.'),
     }),
 
-    // Not visible in the form
+    // Not visible in the form - Two fields for the same data. Been testing to see which one would work best.
     // defineField({
     //   name: 'skills1',
     //   title: 'Skills',

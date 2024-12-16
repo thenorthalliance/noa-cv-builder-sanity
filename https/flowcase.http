@@ -1,0 +1,35 @@
+@company = noaignite
+@token = 57644d168d745199db06e220c91ccd8b
+@employee = "Ane"
+@default_cv_id = 6267a3e1829c4f0fc16f760b
+@user_id = 6267a3e1829c4f0fc16f760a
+// Frontendavdeling
+@office_id = 56d7f5fd69702d248e000007
+@office_name = Frontend 
+
+# GET https://{{company}}.flowcase.com/api/v2/users/search
+# Authorization: Bearer {{token}}
+# Content-Type: application/json
+
+//fetch all skills
+# GET https://{{company}}.flowcase.com/api/v1/masterdata/technologies/tags?offset=0&limit=100
+# Authorization: Bearer {{token}}
+# Content-Type: application/json
+
+//fetch user
+# GET https://{{company}}.flowcase.com/api/v2/users/search?name={{employee}}
+# Authorization: Bearer {{token}}
+# Content-Type: application/json
+
+//fetch full cv
+# GET https://{{company}}.flowcase.com/api/v3/cvs/{{user_id}}/{{default_cv_id}}
+# Authorization: Bearer {{token}}
+# Content-Type: application/json
+
+//fetches frontend-department
+GET https://{{company}}.flowcase.com/api/v2/users/search?deactivated=false&office_ids[]={{office_id}}
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+
+# curl -X GET "https://{{name}}.flowcase.com/api/v2/users/search" -H "Authorization: Bearer 57644d168d745199db06e220c91ccd8b" -H "Content-Type: application/json" | jq '.[].name'
